@@ -168,7 +168,7 @@
     <div class="price">499&nbsp;Kč</div>
     <span class="save">dnes ušetříš 87&nbsp;%</span>
     <p class="small">Jednorázová platba · okamžitý přístup</p>
-    <a class="btn" href="/checkout">ANO! Chci svíčky na sváteční stůl</a>
+    <a class="btn" href="/checkout?country=CZ">ANO! Chci svíčky na sváteční stůl</a>
     <p class="small">🔒 Bezpečná platba kartou</p>
   </div>
   <ul class="ck">
@@ -210,7 +210,7 @@
   <details><summary>Kdy to dostanu?</summary><p>Hned po zaplacení ti přijde e-mail s přístupem.</p></details>
   <details><summary>Proč to nenajdu zdarma na YouTube?</summary><p>Tam najdeš jednu svíčku, většinou v angličtině a bez vysvětlení, proč se rozpadne nebo zhasne. Tady máš 4 receptáře v češtině, 3 chyby vysvětlené a plán na Štědrý večer i Silvestra.</p></details>
 
-  <a class="btn" href="/checkout">ANO! Chci svíčky na sváteční stůl · 499&nbsp;Kč</a>
+  <a class="btn" href="/checkout?country=CZ">ANO! Chci svíčky na sváteční stůl · 499&nbsp;Kč</a>
   <p class="small" style="text-align:center">© 2026 Sváteční stůl · Obchodní podmínky · Ochrana osobních údajů</p>
 </div></section>
 
@@ -248,4 +248,4 @@
 })();
 </script>
 
-<script>(function(){var q=location.search;if(!q)return;document.querySelectorAll('a[href="/checkout"]').forEach(function(a){a.href='/checkout'+q;});})();</script>
+<script>(function(){var q=location.search.replace(/^\?/,'');document.querySelectorAll('a[href="/checkout?country=CZ"]').forEach(function(a){if(q)a.href='/checkout?country=CZ&'+q;});})();</script>
