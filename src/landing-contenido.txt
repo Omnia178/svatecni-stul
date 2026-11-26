@@ -59,15 +59,15 @@
 <section class="step on" data-step="1"><div class="wrap">
   <span class="pill">Jedlé svíčky</span>
   <h1>Prostíráš stůl pro hosty… a máš pocit, že něco chybí?</h1>
-  <p>Stejné chlebíčky. Stejný talíř sýrů. Stejné víno. Všem chutná, nikdo si to nepamatuje. A ty, co ses tolik snažil(a), máš pocit, že <b>„to mohlo být výjimečné“</b>.</p>
+  <p>Stejné chlebíčky. Stejný talíř sýrů. Stejné víno. Všem to chutná, ale nikdo si to nepamatuje. A ty, i když ses tolik snažil(a), máš pocit, že <b>„to mohlo být výjimečné“</b>.</p>
   <h3>Jak by ses popsal(a) v kuchyni?</h3>
-  <p class="sub">Žádná odpověď není špatně 😉</p>
+  <p class="sub">Žádná odpověď není špatná 😉</p>
   <button class="opt" data-next="2" data-q1="a"><span>🙈</span>Nikdy jsem nic podobného nedělal(a)</button>
   <button class="opt" data-next="2" data-q1="b"><span>🙂</span>Něco uvařím</button>
   <button class="opt" data-next="2" data-q1="c"><span>👩‍🍳</span>Rád(a) v kuchyni vymýšlím</button>
   <img class="foto" src="https://omnia178.github.io/svatecni-stul/img/hero.jpg" alt="Máslová svíčka hoří uprostřed stolu a host do ní namáčí chleba">
   <p>Představ si, že uprostřed stolu zapálíš svíčku… a když plamen rozpustí máslo, všichni do ní začnou namáčet chleba. <b>Ano: ta svíčka se jí.</b> Je to chvíle, kdy hosté sáhnou po mobilu, aby si ji vyfotili.</p>
-  <p>Říká se jim <b>jedlé svíčky</b> a dělají se doma, ze surovin ze supermarketu — i když jsi nikdy nic podobného nedělal(a).</p>
+  <p>Říká se jim <b>jedlé svíčky</b> a dělají se doma ze surovin ze supermarketu — i když jsi nikdy nic podobného nedělal(a).</p>
   <ul class="ck">
     <li>Máslové svíčky s bylinkami, na namáčení chleba</li>
     <li>Čokoládové a sýrové svíčky, sladké i slané</li>
@@ -89,7 +89,7 @@
   <button class="back" data-back>←</button>
   <div class="prog"><i style="width:20%"></i></div>
   <h2>Jak by ses popsal(a) v kuchyni?</h2>
-  <p class="sub">Žádná odpověď není špatně 😉</p>
+  <p class="sub">Žádná odpověď není špatná 😉</p>
   <button class="opt" data-next="2" data-q1="a"><span>🙈</span>Nikdy jsem nic podobného nedělal(a)</button>
   <button class="opt" data-next="2" data-q1="b"><span>🙂</span>Něco uvařím</button>
   <button class="opt" data-next="2" data-q1="c"><span>👩‍🍳</span>Rád(a) v kuchyni vymýšlím</button>
@@ -113,7 +113,7 @@
   <p class="big">JE TO TĚŽKÉ?</p>
   <p class="ans">Odpověď zní: ne!</p>
   <img class="foto" src="https://omnia178.github.io/svatecni-stul/img/vela-real.jpg" alt="Hotová máslová svíčka s bylinkami na prkénku">
-  <p>Nepotřebuješ zkušenosti, stroje ani cukrářský talent. <b>Když umíš rozpustit máslo, zvládneš i jedlou svíčku.</b></p>
+  <p>Nepotřebuješ zkušenosti, speciální nádobí ani cukrářský talent. <b>Když umíš rozpustit máslo, zvládneš i jedlou svíčku.</b></p>
   <ul class="ck">
     <li>Recepty krok za krokem, s fotkami</li>
     <li>Míry v gramech a lžících, bez komplikací</li>
@@ -135,7 +135,7 @@
     <tr><td>Máslo (250 g)</td><td>≈ 40 Kč</td></tr>
     <tr><td>Bylinky nebo čokoláda</td><td>≈ 30–50 Kč</td></tr>
     <tr><td>Bavlněný knot bez parafínu (vydrží na desítky svíček)</td><td>≈ 120 Kč</td></tr>
-    <tr><td>Sklenice</td><td>z domu</td></tr>
+    <tr><td>Sklenice</td><td>máš doma</td></tr>
     <tr><td><b>Tvoje první svíčka</b></td><td>pár desítek korun</td></tr>
   </table>
   <button class="btn" data-next="5">Pokračovat</button>
@@ -149,7 +149,7 @@
   <p>Než cokoli koupíš, stáhni si <b>recept na máslovou svíčku s česnekem a bylinkami</b>. Uvidíš, jak je to jednoduché — a jak se vyhnout chybám, kvůli kterým se svíčka rozpadne.</p>
   <a class="btn sec" href="https://omnia178.github.io/svatecni-stul/recept/maslova-svicka-recept-zdarma.pdf" target="_blank" rel="noopener">📄 Stáhnout recept zdarma (PDF)</a>
   <h3>Teď jsi na řadě ty 💫</h3>
-  <p>Pokud jsi došel (došla) až sem, máš to nejdůležitější: chuť udělat něco výjimečného vlastníma rukama. Zkušenosti nepotřebuješ — postup krok za krokem udělá zbytek.</p>
+  <p>Pokud jsi došel(a) až sem, máš to nejdůležitější: chuť udělat něco výjimečného vlastníma rukama. Zkušenosti nepotřebuješ — postup krok za krokem udělá zbytek.</p>
   <button class="btn" data-next="plan">Jsem připraven(a) — ukaž mi plán!</button>
 </div></section>
 
@@ -199,16 +199,16 @@
 
   <div class="gar">
     <h3>Záruka „První svíčka“ — 7 dní</h3>
-    <p>Uvař svou první svíčku podle receptu. Pokud se ti nebude líbit, napiš nám do 7 dní a vrátíme ti peníze. Recepty si můžeš nechat.</p>
+    <p>Udělej svou první svíčku podle receptu. Pokud se ti nebude líbit, napiš nám do 7 dní a vrátíme ti peníze. Recepty si můžeš nechat.</p>
   </div>
 
   <h3>Časté otázky</h3>
   <details><summary>Nikdy jsem nic takového nedělal(a). Zvládnu to?</summary><p>Ano. Když umíš rozpustit máslo, zvládneš to. První recept zabere 20 minut práce a návod se 3 chybami ti řekne, čemu se vyhnout.</p></details>
   <details><summary>Opravdu se ta svíčka jí?</summary><p>Ano: je z másla, čokolády nebo sýra. Zapálíš ji, rozpustí se a namáčíš do ní chleba. Knot před dojedením vyndáš.</p></details>
-  <details><summary>Potřebuju speciální suroviny nebo nádobí?</summary><p>Ne. Suroviny ze supermarketu, formu (stačí sklenice nebo hrnek) a bavlněný knot bez parafínu. V návodu najdeš, kde ho sehnat.</p></details>
+  <details><summary>Potřebuju speciální suroviny nebo nádobí?</summary><p>Ne. Stačí suroviny ze supermarketu, forma (třeba sklenice nebo hrnek) a bavlněný knot bez parafínu. V návodu najdeš, kde ho sehnat.</p></details>
   <details><summary>Je to předplatné?</summary><p>Ne. Platíš jen jednou a je to tvoje navždy.</p></details>
   <details><summary>Kdy to dostanu?</summary><p>Hned po zaplacení ti přijde e-mail s přístupem.</p></details>
-  <details><summary>Proč to nenajdu zdarma na YouTube?</summary><p>Tam najdeš jednu svíčku, většinou v angličtině a bez vysvětlení, proč se rozpadne nebo zhasne. Tady máš 4 receptáře v češtině, 3 chyby vysvětlené a plán na Štědrý večer i Silvestra.</p></details>
+  <details><summary>Proč to nenajdu zdarma na YouTube?</summary><p>Tam najdeš jednu svíčku, většinou v angličtině a bez vysvětlení, proč se rozpadne nebo zhasne. Tady máš 4 receptáře v češtině, vysvětlené 3 chyby a plán na Štědrý večer i Silvestra.</p></details>
 
   <a class="btn" href="/checkout?country=CZ">ANO! Chci svíčky na sváteční stůl · 499&nbsp;Kč</a>
   <p class="small" style="text-align:center">© 2026 Sváteční stůl · Obchodní podmínky · Ochrana osobních údajů</p>
