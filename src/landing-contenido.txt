@@ -1,0 +1,251 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,500&family=Inter:wght@400;600;700;800&display=swap&subset=latin-ext" rel="stylesheet">
+<style>
+.sv{--bg:#FBF7F0;--tx:#3A2A21;--tx2:#6B5A4E;--ac:#A8432A;--card:#EFE8DC;--bd:#E2D6C5;--ok:#16A34A;font-family:Inter,system-ui,sans-serif;color:var(--tx);background:var(--bg);font-size:16px;line-height:1.55;padding:0 0 96px}
+.sv *{box-sizing:border-box}
+.sv .wrap{max-width:440px;margin:0 auto;padding:20px 18px}
+.sv h1,.sv h2,.sv h3{font-family:"Playfair Display",Georgia,serif;font-weight:600;color:var(--tx);margin:.4em 0;line-height:1.2;text-align:center}
+.sv h1{font-size:29px}.sv h2{font-size:25px}.sv h3{font-size:20px}
+.sv p{margin:.7em 0}
+.sv .pill{display:table;margin:0 auto 6px;background:var(--ac);color:#fff;font-weight:700;font-size:13px;padding:5px 14px;border-radius:999px}
+.sv .sub{color:var(--tx2);text-align:center;font-size:13px;margin-top:-4px}
+.sv .opt{display:flex;align-items:center;gap:14px;width:100%;background:#fff;border:1px solid var(--bd);border-radius:16px;padding:16px;margin:10px 0;font:inherit;color:var(--tx);text-align:left;cursor:pointer}
+.sv .opt span{font-size:24px}
+.sv .opt:hover{border-color:var(--ac)}
+.sv img.foto{width:100%;border-radius:18px;display:block;margin:16px 0;background:var(--card);aspect-ratio:4/3;object-fit:cover}
+.sv ul.ck{list-style:none;padding:0;margin:12px 0}
+.sv ul.ck li{padding:8px 0 8px 28px;position:relative;border-bottom:1px solid var(--bd)}
+.sv ul.ck li:last-child{border-bottom:0}
+.sv ul.ck li:before{content:"✓";position:absolute;left:4px;color:var(--ok);font-weight:800}
+.sv .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0}
+.sv .grid div{background:var(--card);border-radius:14px;padding:12px;font-size:14px}
+.sv .grid b{display:block}
+.sv .btn{display:block;width:100%;text-align:center;background:var(--ok);color:#fff !important;font-weight:700;font-size:17px;padding:16px;border-radius:22px;border:0;text-decoration:none;cursor:pointer;margin:16px 0;font-family:inherit}
+.sv .btn.sec{background:#fff;color:var(--tx) !important;border:1px solid var(--bd)}
+.sv .back{background:none;border:0;font-size:22px;color:var(--tx2);cursor:pointer;padding:0}
+.sv .big{font-family:"Playfair Display",Georgia,serif;font-size:30px;text-align:center;margin:4px 0 0}
+.sv .ans{text-align:center;font-weight:700;color:var(--ac);font-size:20px;margin:0}
+.sv table.cost{width:100%;border-collapse:collapse;margin:12px 0}
+.sv table.cost td{padding:10px 4px;border-bottom:1px solid var(--bd)}
+.sv table.cost td:last-child{text-align:right;font-weight:700;white-space:nowrap}
+.sv .box{background:#fff;border:1px solid var(--bd);border-radius:18px;padding:16px;margin:14px 0}
+.sv .offer{border:2px solid var(--ac);text-align:center}
+.sv .was{color:var(--tx2);font-size:14px}.sv .was s{color:var(--tx2)}
+.sv .price{font-size:40px;font-weight:800;margin:2px 0}
+.sv .save{display:inline-block;background:var(--ac);color:#fff;font-weight:800;border-radius:999px;padding:4px 12px;font-size:14px}
+.sv .small{font-size:13px;color:var(--tx2)}
+.sv .item{display:flex;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid var(--bd)}
+.sv .item img{width:64px;height:64px;border-radius:10px;object-fit:cover;background:var(--card);flex:none}
+.sv .item div{flex:1}.sv .item .v{font-weight:700;white-space:nowrap;text-align:right}
+.sv .free{color:var(--ok);font-weight:800;font-size:12px;display:block}
+.sv .gar{background:var(--card);border-radius:18px;padding:16px;text-align:center}
+.sv details{background:#fff;border:1px solid var(--bd);border-radius:14px;padding:12px 14px;margin:8px 0}
+.sv summary{font-weight:700;cursor:pointer}
+.sv .bar{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--bd);padding:10px 14px;display:none;z-index:50}
+.sv .bar .in{max-width:440px;margin:0 auto;display:flex;gap:12px;align-items:center}
+.sv .bar .btn{margin:0;padding:12px;flex:1}
+.sv .bar .p{line-height:1.1;font-weight:800}.sv .bar .p s{font-weight:400;font-size:12px;color:var(--tx2);display:block}
+.sv .step{display:none}.sv .step.on{display:block}
+.sv .prog{height:4px;background:var(--bd);border-radius:4px;margin:6px 0 14px;overflow:hidden}
+.sv .prog i{display:block;height:100%;background:var(--ac)}
+.sv .loader{text-align:center;padding:60px 0}
+.sv .loader .prog{margin:16px auto;max-width:260px}
+.sv .loader .prog i{width:0;transition:width 2.2s linear}
+</style>
+
+<div class="sv" id="sv">
+
+<!-- 1 · dolor + pregunta 1 -->
+<section class="step on" data-step="1"><div class="wrap">
+  <span class="pill">Jedlé svíčky</span>
+  <h1>Prostíráš stůl pro hosty… a máš pocit, že něco chybí?</h1>
+  <p>Stejné chlebíčky. Stejný talíř sýrů. Stejné víno. Všem chutná, nikdo si to nepamatuje. A ty, co ses tolik snažil(a), máš pocit, že <b>„to mohlo být výjimečné“</b>.</p>
+  <h3>Jak by ses popsal(a) v kuchyni?</h3>
+  <p class="sub">Žádná odpověď není špatně 😉</p>
+  <button class="opt" data-next="2" data-q1="a"><span>🙈</span>Nikdy jsem nic podobného nedělal(a)</button>
+  <button class="opt" data-next="2" data-q1="b"><span>🙂</span>Něco uvařím</button>
+  <button class="opt" data-next="2" data-q1="c"><span>👩‍🍳</span>Rád(a) v kuchyni vymýšlím</button>
+  <img class="foto" src="https://omnia178.github.io/svatecni-stul/img/hero.jpg" alt="Máslová svíčka hoří uprostřed stolu a host do ní namáčí chleba">
+  <p>Představ si, že uprostřed stolu zapálíš svíčku… a když plamen rozpustí máslo, všichni do ní začnou namáčet chleba. <b>Ano: ta svíčka se jí.</b> Je to chvíle, kdy hosté sáhnou po mobilu, aby si ji vyfotili.</p>
+  <p>Říká se jim <b>jedlé svíčky</b> a dělají se doma, ze surovin ze supermarketu — i když jsi nikdy nic podobného nedělal(a).</p>
+  <ul class="ck">
+    <li>Máslové svíčky s bylinkami, na namáčení chleba</li>
+    <li>Čokoládové a sýrové svíčky, sladké i slané</li>
+    <li>3 chyby, kvůli kterým se svíčka rozpadne nebo zhasne — a jak se jim vyhnout</li>
+    <li>Jak je naservírovat a darovat, aby to bylo „wow“</li>
+  </ul>
+  <div class="grid">
+    <div><b>Snadné na přípravu</b>Krok za krokem, pro každého</div>
+    <div><b>Vypadají draze</b>Jedinečné a elegantní</div>
+    <div><b>Ideální jako dárek</b>Místo další lahve vína</div>
+    <div><b>Obyčejné suroviny</b>Ze supermarketu za rohem</div>
+  </div>
+  <p style="text-align:center">Odpověz na 2 rychlé otázky a připravím ti plán, abys svou první jedlou svíčku udělal(a) ještě tento týden.</p>
+  <button class="btn" data-next="1q">Ukaž mi jak! ✨</button>
+</div></section>
+
+<!-- 1q · pregunta 1 sola (desde el botón) -->
+<section class="step" data-step="1q"><div class="wrap">
+  <button class="back" data-back>←</button>
+  <div class="prog"><i style="width:20%"></i></div>
+  <h2>Jak by ses popsal(a) v kuchyni?</h2>
+  <p class="sub">Žádná odpověď není špatně 😉</p>
+  <button class="opt" data-next="2" data-q1="a"><span>🙈</span>Nikdy jsem nic podobného nedělal(a)</button>
+  <button class="opt" data-next="2" data-q1="b"><span>🙂</span>Něco uvařím</button>
+  <button class="opt" data-next="2" data-q1="c"><span>👩‍🍳</span>Rád(a) v kuchyni vymýšlím</button>
+</div></section>
+
+<!-- 2 · pregunta 2 -->
+<section class="step" data-step="2"><div class="wrap">
+  <button class="back" data-back>←</button>
+  <div class="prog"><i style="width:40%"></i></div>
+  <h2>Pro koho chceš svíčky dělat?</h2>
+  <p class="sub">Vyber, co je ti nejbližší</p>
+  <button class="opt" data-next="3" data-q2="a"><span>🎄</span>Na Štědrý večer nebo Silvestra, pro rodinu a přátele</button>
+  <button class="opt" data-next="3" data-q2="b"><span>🎁</span>Jako dárek, místo lahve vína</button>
+  <button class="opt" data-next="3" data-q2="c"><span>💛</span>Pro sebe: rád(a) zkouším nové věci</button>
+</div></section>
+
+<!-- 3 · ¿es difícil? (mecanismo) -->
+<section class="step" data-step="3"><div class="wrap">
+  <button class="back" data-back>←</button>
+  <div class="prog"><i style="width:60%"></i></div>
+  <p class="big">JE TO TĚŽKÉ?</p>
+  <p class="ans">Odpověď zní: ne!</p>
+  <img class="foto" src="https://omnia178.github.io/svatecni-stul/img/vela-real.jpg" alt="Hotová máslová svíčka s bylinkami na prkénku">
+  <p>Nepotřebuješ zkušenosti, stroje ani cukrářský talent. <b>Když umíš rozpustit máslo, zvládneš i jedlou svíčku.</b></p>
+  <ul class="ck">
+    <li>Recepty krok za krokem, s fotkami</li>
+    <li>Míry v gramech a lžících, bez komplikací</li>
+    <li><b>3 chyby</b>, kvůli kterým se svíčka rozpadne nebo zhasne — a jak se jim vyhnout</li>
+    <li>Jak ji uchovat v lednici a podávat bezpečně</li>
+  </ul>
+  <button class="btn" data-next="4">Pokračovat</button>
+</div></section>
+
+<!-- 4 · ¿es caro? -->
+<section class="step" data-step="4"><div class="wrap">
+  <button class="back" data-back>←</button>
+  <div class="prog"><i style="width:80%"></i></div>
+  <p class="big">STOJÍ TO HODNĚ?</p>
+  <p class="ans">Zase ne! 🌸</p>
+  <img class="foto" src="https://omnia178.github.io/svatecni-stul/img/ingredientes.jpg" alt="Máslo, bylinky, čokoláda a sklenice na stole">
+  <p>Používáš suroviny, které máš doma nebo seženeš v každém supermarketu. Sklenici můžeš použít znovu.</p>
+  <table class="cost">
+    <tr><td>Máslo (250 g)</td><td>≈ 40 Kč</td></tr>
+    <tr><td>Bylinky nebo čokoláda</td><td>≈ 30–50 Kč</td></tr>
+    <tr><td>Bavlněný knot bez parafínu (vydrží na desítky svíček)</td><td>≈ 120 Kč</td></tr>
+    <tr><td>Sklenice</td><td>z domu</td></tr>
+    <tr><td><b>Tvoje první svíčka</b></td><td>pár desítek korun</td></tr>
+  </table>
+  <button class="btn" data-next="5">Pokračovat</button>
+</div></section>
+
+<!-- 5 · muestra gratis (en lugar de los chats) -->
+<section class="step" data-step="5"><div class="wrap">
+  <button class="back" data-back>←</button>
+  <div class="prog"><i style="width:95%"></i></div>
+  <h2>Vyzkoušej si to zdarma 🎁</h2>
+  <p>Než cokoli koupíš, stáhni si <b>recept na máslovou svíčku s česnekem a bylinkami</b>. Uvidíš, jak je to jednoduché — a jak se vyhnout chybám, kvůli kterým se svíčka rozpadne.</p>
+  <a class="btn sec" href="https://omnia178.github.io/svatecni-stul/recept/maslova-svicka-recept-zdarma.pdf" target="_blank" rel="noopener">📄 Stáhnout recept zdarma (PDF)</a>
+  <h3>Teď jsi na řadě ty 💫</h3>
+  <p>Pokud jsi došel (došla) až sem, máš to nejdůležitější: chuť udělat něco výjimečného vlastníma rukama. Zkušenosti nepotřebuješ — postup krok za krokem udělá zbytek.</p>
+  <button class="btn" data-next="plan">Jsem připraven(a) — ukaž mi plán!</button>
+</div></section>
+
+<!-- plan · barra de carga -->
+<section class="step" data-step="plan"><div class="wrap loader">
+  <h3>Připravuji tvůj plán…</h3>
+  <div class="prog"><i id="sv-load"></i></div>
+  <p class="small">Vybírám recepty podle tvých odpovědí</p>
+</div></section>
+
+<!-- 6 · oferta -->
+<section class="step" data-step="6"><div class="wrap">
+  <h2>Gratulujeme! Tvůj plán je připravený 🎉</h2>
+  <div class="box offer" id="nabidka">
+    <div class="was">Celková hodnota: <s>3&nbsp;990&nbsp;Kč</s></div>
+    <div class="price">499&nbsp;Kč</div>
+    <span class="save">dnes ušetříš 87&nbsp;%</span>
+    <p class="small">Jednorázová platba · okamžitý přístup</p>
+    <a class="btn" href="/checkout">ANO! Chci svíčky na sváteční stůl</a>
+    <p class="small">🔒 Bezpečná platba kartou</p>
+  </div>
+  <ul class="ck">
+    <li><b>Není to předplatné:</b> platíš jen jednou.</li>
+    <li><b>Okamžitý přístup</b> e-mailem, i v mobilu.</li>
+    <li><b>Digitální produkt:</b> doručení na tvůj e-mail.</li>
+    <li><b>Ano: svíčka se jí</b> (máslo, čokoláda nebo sýr).</li>
+  </ul>
+  <div class="box">
+    <h3 style="text-align:left">Tvůj plán jedlých svíček</h3>
+    <p>🎯 <b>Cíl:</b> <span id="sv-cil">překvapit ty, na kterých ti záleží.</span></p>
+    <p>🕯️ <b>Začneš:</b> máslovou svíčkou s bylinkami — nejjednodušší, 20 minut práce.</p>
+    <p>📅 <b>Na Štědrý večer:</b> svíčka zapálená uprostřed stolu.</p>
+  </div>
+
+  <h3>Všechno, co dostaneš</h3>
+  <div class="item"><img src="https://omnia178.github.io/svatecni-stul/img/e1.jpg" alt=""><div><b>Máslové svíčky</b><br><span class="small">s bylinkami, s medem a kořením, s uzenou solí</span></div><span class="v">790&nbsp;Kč</span></div>
+  <div class="item"><img src="https://omnia178.github.io/svatecni-stul/img/e2.jpg" alt=""><div><b>Čokoládové svíčky</b><br><span class="small">sladké, na namáčení ovoce a sušenek</span></div><span class="v">690&nbsp;Kč</span></div>
+  <div class="item"><img src="https://omnia178.github.io/svatecni-stul/img/e3.jpg" alt=""><div><b>Sýrové svíčky</b><br><span class="small">s uzeným sýrem a Hermelínem</span></div><span class="v">690&nbsp;Kč</span></div>
+  <div class="item"><img src="https://omnia178.github.io/svatecni-stul/img/e4.jpg" alt=""><div><b>Svíčky ve sklenici</b><br><span class="small">nejsnadnější verze, bez vyklápění — i jako dárek</span></div><span class="v">590&nbsp;Kč</span></div>
+
+  <h3>A k tomu dárky</h3>
+  <div class="item"><img src="https://omnia178.github.io/svatecni-stul/img/b1.jpg" alt=""><div>🎁 <b>3 chyby a jak se jim vyhnout</b><br><span class="small">aby se ti svíčka nerozpadla před hosty</span></div><span class="v"><s>290&nbsp;Kč</s><span class="free">ZDARMA</span></span></div>
+  <div class="item"><img src="https://omnia178.github.io/svatecni-stul/img/b2.jpg" alt=""><div>🎁 <b>Plán na Štědrý večer a Silvestra</b><br><span class="small">co připravit den předem a co 10 minut před večeří</span></div><span class="v"><s>290&nbsp;Kč</s><span class="free">ZDARMA</span></span></div>
+  <div class="item"><img src="https://omnia178.github.io/svatecni-stul/img/b3.jpg" alt=""><div>🎁 <b>Dárková visačka k tisku</b><br><span class="small">„Zapal mě a namáčej“ — místo lahve vína</span></div><span class="v"><s>260&nbsp;Kč</s><span class="free">ZDARMA</span></span></div>
+  <div class="item"><img src="https://omnia178.github.io/svatecni-stul/img/b4.jpg" alt=""><div>🎁 <b>Chleby na namáčení</b><br><span class="small">jen při nákupu do 3.&nbsp;prosince</span></div><span class="v"><s>390&nbsp;Kč</s><span class="free">ZDARMA</span></span></div>
+  <p class="small" style="text-align:center">„Chleby na namáčení“ dostaneš zdarma jen při nákupu do 3. prosince. Cena zůstává stejná: zmizí jen dárek.</p>
+
+  <div class="gar">
+    <h3>Záruka „První svíčka“ — 7 dní</h3>
+    <p>Uvař svou první svíčku podle receptu. Pokud se ti nebude líbit, napiš nám do 7 dní a vrátíme ti peníze. Recepty si můžeš nechat.</p>
+  </div>
+
+  <h3>Časté otázky</h3>
+  <details><summary>Nikdy jsem nic takového nedělal(a). Zvládnu to?</summary><p>Ano. Když umíš rozpustit máslo, zvládneš to. První recept zabere 20 minut práce a návod se 3 chybami ti řekne, čemu se vyhnout.</p></details>
+  <details><summary>Opravdu se ta svíčka jí?</summary><p>Ano: je z másla, čokolády nebo sýra. Zapálíš ji, rozpustí se a namáčíš do ní chleba. Knot před dojedením vyndáš.</p></details>
+  <details><summary>Potřebuju speciální suroviny nebo nádobí?</summary><p>Ne. Suroviny ze supermarketu, formu (stačí sklenice nebo hrnek) a bavlněný knot bez parafínu. V návodu najdeš, kde ho sehnat.</p></details>
+  <details><summary>Je to předplatné?</summary><p>Ne. Platíš jen jednou a je to tvoje navždy.</p></details>
+  <details><summary>Kdy to dostanu?</summary><p>Hned po zaplacení ti přijde e-mail s přístupem.</p></details>
+  <details><summary>Proč to nenajdu zdarma na YouTube?</summary><p>Tam najdeš jednu svíčku, většinou v angličtině a bez vysvětlení, proč se rozpadne nebo zhasne. Tady máš 4 receptáře v češtině, 3 chyby vysvětlené a plán na Štědrý večer i Silvestra.</p></details>
+
+  <a class="btn" href="/checkout">ANO! Chci svíčky na sváteční stůl · 499&nbsp;Kč</a>
+  <p class="small" style="text-align:center">© 2026 Sváteční stůl · Obchodní podmínky · Ochrana osobních údajů</p>
+</div></section>
+
+<div class="bar" id="sv-bar"><div class="in">
+  <div class="p"><s>3&nbsp;990&nbsp;Kč</s>499&nbsp;Kč</div>
+  <a class="btn" href="#nabidka">Chci to ↓</a>
+</div></div>
+</div>
+
+<script>
+(function(){
+  var root=document.getElementById('sv'), hist=['1'], ans={};
+  function show(id){
+    root.querySelectorAll('.step').forEach(function(s){s.classList.toggle('on',s.getAttribute('data-step')===id);});
+    document.getElementById('sv-bar').style.display = id==='6' ? 'block' : 'none';
+    window.scrollTo(0,0);
+  }
+  function go(id){
+    hist.push(id); show(id);
+    if(id==='plan'){
+      var l=document.getElementById('sv-load'); l.style.width='0';
+      setTimeout(function(){l.style.width='100%';},50);
+      setTimeout(function(){hist.pop();hist.push('6');show('6');},2400);
+    }
+  }
+  root.addEventListener('click',function(e){
+    var b=e.target.closest('[data-next],[data-back]'); if(!b) return;
+    if(b.hasAttribute('data-back')){ if(hist.length>1){hist.pop(); show(hist[hist.length-1]);} return; }
+    if(b.dataset.q1) ans.q1=b.dataset.q1;
+    if(b.dataset.q2){ ans.q2=b.dataset.q2;
+      var c={a:'překvapit rodinu a přátele u svátečního stolu.',b:'darovat něco, na co se nezapomíná.',c:'naučit se něco nového a udělat radost sobě.'}[ans.q2];
+      document.getElementById('sv-cil').textContent=c; }
+    go(b.dataset.next);
+  });
+})();
+</script>
+
+<script>(function(){var q=location.search;if(!q)return;document.querySelectorAll('a[href="/checkout"]').forEach(function(a){a.href='/checkout'+q;});})();</script>
